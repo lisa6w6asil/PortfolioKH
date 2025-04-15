@@ -2,38 +2,33 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>明るいHOUSE</title>
-    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <title>FA EXHIBITION</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
+    <script src="./js/main.js"></script>
   </head>
 
   <body>
     <header id="header">
-      <h1 class="site-title">
-        <a href="index.html"><img src="img/logo.svg" alt="明るいHOUSE"></a>
-      </h1>
+      <div class="logo">
+        <a href="#"><img src="img/logo.svg" alt="FA EXHIBITION"></a>
+      </div>
 
       <nav id="navi">
-        <ul class="nav-menu">
-          <li><a href="#">私たちについて</a></li>
-          <li><a href="#">サービス</a></li>
-          <li><a href="#">商品情報</a></li>
-          <li><a href="#">展示会</a></li>
-          <li><a href="#">暮らしの日記</a></li>
-          <li><a href="#">会社概要</a></li>
-        </ul>
-        <ul class="nav-sns">
-          <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-          <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank">instagram</a></li>
+        <ul class="menu">
+          <li><a href="#">TOP</a></li>
+          <li><a href="#information">INFORMATION</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#access">ACCESS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
 
@@ -42,147 +37,97 @@
         <span></span>
         <span></span>
       </div>
-
-      <div id="mask"></div>
     </header>
 
     <div class="container">
       <main>
-        <div id="video">
-          <video class="bg-video" src="video/video.mp4" loop autoplay muted playsinline></video>
+        <!-- メインビジュアル -->
+        <div id="mainvisual">
+          <img src="img/sample1.jpg" alt="">
+          <img src="img/sample1.jpg" alt="">
+          <img src="img/sample1.jpg" alt="">
         </div>
 
-        <section id="project">
-          <div class="wrapper">
-            <h2 class="sec-title">建築事例をご紹介</h2>
-            <ul class="list">
-              <li>
-                <a href="#">
-                  <img src="img/project1.jpg" alt="">
-                  <p class="name">PROJECT_01</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/project2.jpg" alt="">
-                  <p class="name">PROJECT_02</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/project3.jpg" alt="">
-                  <p class="name">PROJECT_03</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="img/project4.jpg" alt="">
-                  <p class="name">PROJECT_04</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <!-- サイトタイトル -->
+        <h1 class="site-title inview fadein">Hello Flower!<br>FA EXHIBITION 2021</h1>
+
+        <!-- Information -->
+        <section id="information" class="inview fadein">
+          <h2 class="section-title">INFORMATION</h2>
+          <p>
+            <span class="info-date-en">2021 JUL 1(THU)-3(SAT)</span>
+            <span class="info-time-en">DAY1 10am-6pm OTHER 10am-5:30pm</span>
+          </p>
+          <p class="info-place">at PARK SIDE HALL</p>
+          <p class="info-date-ja">
+            2021年7月1日(木)ー3日(土)<br>
+            Day1 10時〜18時　その他 10時〜17時30分
+          </p>
         </section>
 
-        <section id="feature">
-          <div class="wrapper">
-            <h2 class="sec-title">明るいHOUSEの特徴</h2>
-            <ul class="list">
-              <li>
-                <a href="#">design</a>
-                <p class="title">デザイン</p>
-                <p>テキストテキストテキスト</p>
-              </li>
-              <li>
-                <a href="#">quality</a>
-                <p class="title">性能</p>
-                <p>テキストテキストテキスト</p>
-              </li>
-              <li>
-                <a href="#">support</a>
-                <p class="title">サポート</p>
-                <p>テキストテキストテキスト</p>
-              </li>
-            </ul>
-          </div>
+        <!-- サイドボタン -->
+        <div id="side-btn">
+          <a href="#">FOR VISITOR</a>
+          <a href="#">FOR EXHIBITOR</a>
+        </div>
+
+        <!-- Gallery -->
+        <section id="gallery" class="wrapper">
+          <h2 class="section-title inview fadein">GALLERY</h2>
+          <ul class="list">
+            <li class="inview fadein"><img src="img/sample1.jpg" alt=""></li>
+            <li class="inview fadein"><img src="img/sample2.jpg" alt=""></li>
+            <li class="inview fadein"><img src="img/sample3.jpg" alt=""></li>
+            <li class="inview fadein"><img src="img/sample1.jpg" alt=""></li>
+            <li class="inview fadein"><img src="img/sample1.jpg" alt=""></li>
+            <li class="inview fadein"><img src="img/sample2.jpg" alt=""></li>
+          </ul>
         </section>
 
-        <section id="flow">
-          <div class="wrapper">
-            <h2 class="sec-title">家ができるまでの流れ</h2>
-            <p>お問い合わせいただいてから、家が完成するまでの流れです。</p>
-
-            <div class="step">
-              <ol class="figure">
-                <li>1.ヒアリング</li>
-                <li>2.プラン提案</li>
-                <li>3.契約</li>
-                <li>4.着工</li>
-                <li>5.完成</li>
-              </ol>
-
-              <dl class="description">
-                <dt><span>1</span>ヒアリング</dt>
-                <dd>
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt><span>2</span>プラン提案</dt>
-                <dd>
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt><span>3</span>契約</dt>
-                <dd>
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt><span>4</span>着工</dt>
-                <dd>
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt><span>5</span>完成</dt>
-                <dd>
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                  テキストテキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-              </dl>
-            </div>
-          </div>
+        <!-- Access -->
+        <section id="access">
+          <h2 class="section-title">ACCESS</h2>
+          <p class="place">PARK SIDE HALL</p>
+          <p class="address">
+            〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
+            PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo
+          </p>
+          <p class="contact">
+            Tel: 03-1111-1111<br>
+            E-mail: info@xxxxxxx.jp
+          </p>
+          <a class="btn" href="#" target="_blank">GOOGLE MAP</a>
         </section>
 
-        <section id="contact">
-          <div class="wrapper">
-            <h2 class="sec-title">お問い合わせ</h2>
-            <p>お問い合わせは下記からお願いいたします。</p>
-            <div class="link">
-              <a class="item" href="#">
-                <img src="img/icon-document.png" alt=""><br>資料請求
-              </a>
-              <a class="item" href="#">
-                <img src="img/icon-seminar.png" alt=""><br>Web説明会
-              </a>
-              <a class="item" href="#">
-                <img src="img/icon-talk.png" alt=""><br>個別相談
-              </a>
-            </div>
-          </div>
+        <!-- Contact -->
+        <section id="contact" class="wrapper">
+          <h2 class="section-title">CONTACT</h2>
+          <a class="btn" href="#">出展に関するお問い合わせ</a>
+          <a class="btn" href="#">その他のお問い合わせ</a>
         </section>
+
+        <!-- Accessの背景画像 -->
+        <div class="bg"></div>
       </main>
 
       <footer id="footer">
-        <a id="to-top" href="#"></a>
-
-        <ul class="menu">
-          <li><a href="#">私たちについて</a></li>
-          <li><a href="#">サービス</a></li>
-          <li><a href="#">商品情報</a></li>
-          <li><a href="#">展示会</a></li>
-          <li><a href="#">暮らしの日記</a></li>
-          <li><a href="#">会社概要</a></li>
+        <div>
+          <p>FA EXHIBITION</p>
+          <p>〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</p>
+          <p class="contact">
+            Tel: 03-1111-1111<br>
+            E-mail: info@xxxxxxx.jp
+          </p>
+          <ul class="sns">
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <ul class="copyright">
+          <li><a href="#">PRIVACY POLICY</a></li>
+          <li>&copy; FA EXHIBITION</li>
         </ul>
-        <p class="copyright">Copyright &copy; 2021 Akarui HOUSE All Rights Reserved.</p>
       </footer>
     </div>
   </body>
