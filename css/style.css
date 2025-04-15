@@ -54,7 +54,7 @@ li {
 サイドボタン
 初期状態は「translateY(60px);」で画面の右側に隠しておく
 Galleryのタイトルが画面下にきたタイミングで、jQueryでCSSを変更してボタンをスライドしながら表示する
-Accessのタイトルが画面下にきたタイミングで、jQueryでCSSを変更してボタンをスライドしながら非表示にする
+aboutのタイトルが画面下にきたタイミングで、jQueryでCSSを変更してボタンをスライドしながら非表示にする
 ※main.jsの「サイドボタンを表示」を参照
 */
 #side-btn {
@@ -85,12 +85,12 @@ Accessのタイトルが画面下にきたタイミングで、jQueryでCSSを�
 }
 
 /*
-Accessの背景画像
+aboutの背景画像
 初期状態は「display: none;」で非表示にしておく
-Accessのタイトルが画面下にきたタイミングで、jQueryのfadeInで表示する
+aboutのタイトルが画面下にきたタイミングで、jQueryのfadeInで表示する
 Contactのタイトルが画面下にきたタイミングで、jQueryのfadeOutで非表示にする
 「position: fixed;」で固定し「width: 100vw;」「height: 100vh;」で全画面表示する
-※main.jsの「Accessの背景画像を表示」を参照
+※main.jsの「aboutの背景画像を表示」を参照
 */
 .bg {
   background: url("../img/bg.jpg") center center repeat !important;
@@ -200,7 +200,7 @@ fadeinクラスの要素が画面下にきたタイミングで、jQueryのinvie
   text-align: center;
   transform: translateY(-100%);
   transition: 0.6s;
-  /* ロゴ、ハンバーガーより下でAccessページの背景画像よりも上にくるよう設定 */
+  /* ロゴ、ハンバーガーより下でaboutページの背景画像よりも上にくるよう設定 */
   z-index: 30;
 }
 #navi ul {
@@ -288,37 +288,37 @@ Gallery
 }
 
 /*-------------------------------------------
-Access
+about
 -------------------------------------------*/
 /*
 「z-index: 20;」でコンテンツが背景画像の上にくるようにする
 ※デフォルトのposition（static）では、z-indexを指定できないため。
 「position: relative;」設定する
 */
-#access {
+#about {
   margin-bottom: 480px;
   position: relative;
   z-index: 20;
 }
-#access .place {
+#about .place {
   font-size: 1.75rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
-#access .address {
+#about .address {
   margin-bottom: 20px;
 }
-#access .contact {
+#about .contact {
   margin-bottom: 30px;
 }
-#access .btn {
+#about .btn {
   border: solid 1px #fff;
   color: #fff;
   display: inline-block;
   padding: 15px 82px;
   transition: 0.3s;
 }
-#access .btn:hover {
+#about .btn:hover {
   background-color: #050507;
 }
 
@@ -451,9 +451,9 @@ SP
   }
 
   /*-------------------------------------------
-  Access
+  about
   -------------------------------------------*/
-  #access {
+  #about {
     margin-bottom: 280px;
   }
 

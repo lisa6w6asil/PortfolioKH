@@ -73,20 +73,20 @@ $(function(){
     ===================================================*/
     // 画面下から#galleryまでの距離を取得
     let gallery_position = $('#gallery').offset().top - $(window).height();
-    // 画面下から#accessまでの距離を取得
-    let access_position = $('#access').offset().top - $(window).height();
+    // 画面下から#aboutまでの距離を取得
+    let about_position = $('#about').offset().top - $(window).height();
 
     // window.innerWidthで画面幅を取得
     // PC表示の場合の処理（画面幅が900pxより大きい場合　※900pxはCSSのブレークポイントとあわせる）
     if (window.innerWidth > 900) {
       // #galleryが表示された場合（スクロール位置が、画面下から#galleryまでの距離を超えた場合）
       if(scroll > gallery_position){
-        // #accessが表示されるまでの間は、#side-btnを横からスライドさせて表示する
-        if(scroll < access_position){
+        // #aboutが表示されるまでの間は、#side-btnを横からスライドさせて表示する
+        if(scroll < about_position){
           $('#side-btn').css({
             'transform': 'rotate(-90deg) translateY(0)'
           });
-        // #accessが表示されたら、#side-btnをスライドさせて非表示にする
+        // #aboutが表示されたら、#side-btnをスライドさせて非表示にする
         } else {
           $('#side-btn').css({
             'transform': 'rotate(-90deg) translateY(60px)'
@@ -101,20 +101,20 @@ $(function(){
     }
 
     /*=================================================
-    Accessの背景画像を表示
+    aboutの背景画像を表示
     ===================================================*/
     // 画面下から#contactまでの距離を取得
     let contact_position = $('#contact').offset().top - $(window).height();
 
-    // #accessが表示された場合
-    if(scroll > access_position){
+    // #aboutが表示された場合
+    if(scroll > about_position){
       // #contactが表示されるまでの間は、背景画像をfadeInで表示する
       if(scroll < contact_position){
         $('.bg').fadeIn(500);
       } else {
         $('.bg').fadeOut(500);
       }
-    // #accessが表示される前の場合
+    // #aboutが表示される前の場合
     } else {
       // 背景画像を表示しない
       $('.bg').fadeOut(500);
