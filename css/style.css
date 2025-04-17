@@ -140,7 +140,7 @@ fadeinクラスの要素が画面下にきたタイミングで、jQueryのinvie
   left: 30px;
   /* 一番上にくるように設定 */
   z-index: 40;
-  display: none;
+  display: flex;
 }
 .logo a {
   display: block;
@@ -222,6 +222,7 @@ fadeinクラスの要素が画面下にきたタイミングで、jQueryのinvie
 #navi.active {
   transform: translateY(0%);
 }
+
 
 /*-------------------------------------------
 Mainvisual
@@ -383,6 +384,26 @@ Contact
   right: -50px;
 }
 
+.mail-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #000000;
+  font-size: 10px;
+  font-family: "Albert Sans", sans-serif;
+  letter-spacing: 0.12em;
+  position:relative;
+  transition: all 0.3s;
+}
+
+
 /*-------------------------------------------
 Footer
 -------------------------------------------*/
@@ -401,7 +422,6 @@ Footer
 #footer .sns {
   display: flex;
   align-items: center;
-  margin-top: 30px;
 }
 #footer .sns li {
   margin-right: 15px;
@@ -413,6 +433,8 @@ Footer
 #footer .copyright li:last-child {
   margin-left: 30px;
 }
+
+
 
 /*-------------------------------------------
 SP
